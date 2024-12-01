@@ -6,7 +6,7 @@ var dayEntered = Console.ReadLine();
 while(dayEntered != "Exit") {
     switch(dayEntered) {
     case "1":
-        Day1.FirstPart();
+        Day1.TotalRun();
         break;
     default:
         Console.WriteLine("I didn't find that day. Here is Hello World instead.");
