@@ -1,0 +1,14 @@
+C:\Users\ryanb\Desktop\AoC\AoC2024\AoC2024\bin\Debug\net9.0\AoC2024.exe
+C:\Users\ryanb\Desktop\AoC\AoC2024\AoC2024\bin\Debug\net9.0\AoC2024.deps.json
+C:\Users\ryanb\Desktop\AoC\AoC2024\AoC2024\bin\Debug\net9.0\AoC2024.runtimeconfig.json
+C:\Users\ryanb\Desktop\AoC\AoC2024\AoC2024\bin\Debug\net9.0\AoC2024.dll
+C:\Users\ryanb\Desktop\AoC\AoC2024\AoC2024\bin\Debug\net9.0\AoC2024.pdb
+C:\Users\ryanb\Desktop\AoC\AoC2024\AoC2024\obj\Debug\net9.0\AoC2024.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ryanb\Desktop\AoC\AoC2024\AoC2024\obj\Debug\net9.0\AoC2024.AssemblyInfoInputs.cache
+C:\Users\ryanb\Desktop\AoC\AoC2024\AoC2024\obj\Debug\net9.0\AoC2024.AssemblyInfo.cs
+C:\Users\ryanb\Desktop\AoC\AoC2024\AoC2024\obj\Debug\net9.0\AoC2024.csproj.CoreCompileInputs.cache
+C:\Users\ryanb\Desktop\AoC\AoC2024\AoC2024\obj\Debug\net9.0\AoC2024.dll
+C:\Users\ryanb\Desktop\AoC\AoC2024\AoC2024\obj\Debug\net9.0\refint\AoC2024.dll
+C:\Users\ryanb\Desktop\AoC\AoC2024\AoC2024\obj\Debug\net9.0\AoC2024.pdb
+C:\Users\ryanb\Desktop\AoC\AoC2024\AoC2024\obj\Debug\net9.0\AoC2024.genruntimeconfig.cache
+C:\Users\ryanb\Desktop\AoC\AoC2024\AoC2024\obj\Debug\net9.0\ref\AoC2024.dll
