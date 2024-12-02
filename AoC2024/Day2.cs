@@ -16,10 +16,12 @@ class Day2{
         string[] inputSplit = inputClean.Split(",");
         
         int total = 0;
+        int totalDampened = 0;
         for(int x = 0; x < inputSplit.Length; x++) {
             total += validReport(inputSplit[x].Split(" "))?1:0;
+            totalDampened += validDampenedReport(inputSplit[x].Split(" ").ToList())?1:0;
         }
-        Console.WriteLine("There are " + total + " safe reports");
+        Console.WriteLine("There are {0} safe reports and {1} safe reports after dampening", total, totalDampened);
     }
 
     public static void SecondPart() {
@@ -60,6 +62,34 @@ class Day2{
         return valid;
     }
 
+    private static bool validDampenedReport(List<string> report) {
+        bool valid = true;
+        bool dampened = false;
+        bool trueIncreasing = ((Int32.Parse(report[0]) < Int32.Parse(report[1])?1:0) + (Int32.Parse(report[1]) < Int32.Parse(report[2])?1:0) + (Int32.Parse(report[2]) < Int32.Parse(report[3])?1:0)) >= 2;
+        for(int x = 0; x < report.Count - 1 && valid; x++) {
+            int first = Int32.Parse(report[x]);
+            int second = Int32.Parse(report[x+1]);
+            if(!((trueIncreasing == first < second) && Math.Abs(first - second) <= 3 && Math.Abs(first - second) > 0)) {
+                if(!dampened) {
+                    Console.WriteLine("Removing {0} from {1}", report[x+1], string.Join(", ", report)); // need to remove the one that is causing it to be out of sequence. Need to cover edge cases for start and end, and then check all items around the error past, first, second, next, may need to remove either first or second to see if that lets the report work.
+                    report.RemoveRange(x+1, 1);
+                    dampened = true;
+                    x = -1;
+                } else {
+                    valid = false;
+                }
+            }
+        }
+        Console.WriteLine("The input {0} is {1} and {2}", string.Join(", ", report), dampened?"dampened":"not dampened", valid?"valid":"not valid");
+        return valid;
+    }
+
+    private static string testInput = @"7 6 4 2 1
+1 2 7 8 9
+9 7 6 2 1
+1 3 2 4 5
+8 6 4 4 1
+1 3 6 7 9";
     private static string input = @"27 29 32 33 36 37 40 37
 61 62 63 66 66
 53 54 57 60 61 62 63 67
