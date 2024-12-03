@@ -11,6 +11,9 @@ while(dayEntered != "Exit") {
     case "2":
         Day2.TotalRun();
         break;
+    case "3":
+        Day3.TotalRun();
+        break;
     default:
         Console.WriteLine("I didn't find that day. Here is Hello World instead.");
         BasicCode.runHelloWorld();
